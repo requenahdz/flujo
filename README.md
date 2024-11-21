@@ -24,7 +24,11 @@
 ## Código
 
 ```typescript
-const categoryOptions: CustomOption[] = categories.map(category => ({
-  label: String(category.name),
-  value: Number(category.id),
-}));
+  const options: CustomOption[] =
+    array?.data.map(x => ({
+      value: Number(x.id),
+      label: String(x.name)
+    })) || [];
+```
+
+
