@@ -19,3 +19,12 @@
 // Mutations for create or update
 
  // Function to handle form submission
+
+
+## Código
+
+```typescript
+const categoryOptions: CustomOption[] = categories.map(category => ({
+  label: String(category.name),
+  value: Number(category.id),
+}));
